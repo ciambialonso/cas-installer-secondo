@@ -74,9 +74,9 @@ function install() {
   git clone https://github.com/ciambialonso/cas-installer-secondo.git 
 
   # Change file permissions
-  sudo chmod 755 -R cas-components 
+  sudo chmod 755 -R cas-installer 
   
-  cd cas-components
+  cd cas-installer
 
   # Start Gitlab INSTALLATION
   echo "  [INSTALL 3/10] Installing GitLab"
@@ -176,7 +176,7 @@ function install() {
 # Run all services
 function startAll {
   echo "Starting CAS System..."
-  cd cas-components
+  cd cas-installer
 
   # Start Gitlab
   echo "  [START 1/8] Starting GitLab"
@@ -227,7 +227,7 @@ function startAll {
 # Stop all services
 function stopAll {
   echo "Stopping CAS System..."
-  cd cas-components
+  cd cas-installer
 
   # Stop Gitlab
   echo "  [STOP 1/8] Stopping GitLab"
@@ -280,7 +280,7 @@ function stopAll {
 # Delete all services
 function deleteAll {
   echo "Deleting CAS System..."
-  cd cas-components
+  cd cas-installer
 
   # Delete Gitlab
   echo "  [DELETE 1/8] Deleting GitLab"
