@@ -71,7 +71,7 @@ function install() {
 
   # Download CAS repos with git
   echo "  [INSTALL 2/10] Start downloading CAS repository"
-  git clone --branch $1 https://github.com/ciambialonso/cas-installer-secondo.git cas-components
+  git clone https://github.com/ciambialonso/cas-installer-secondo.git 
 
   # Change file permissions
   sudo chmod 755 -R cas-components 
